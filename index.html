@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" size="12x12" href="assets/white-dot.svg">
+    <title>Positivus</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- link for swiper.js cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Link for font awsome icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link for bootstrap icons cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <!-- div used in the mobile version -->
+        <div class="black-screen"></div>
+
+        <div id="logo">
+            <a href="#" aria-label="Homepage">
+                <img src="assets/Logo.svg" alt="Logo">
+            </a>
+        </div>
+
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+
+        <nav class="primary-navigation" id="primary-navigation">
+            <ul role="menu">
+                <li role="menuitem"><a href="#">About us</a></li>
+                <li role="menuitem"><a href="#">Services</a></li>
+                <li role="menuitem"><a href="#">Use Cases</a></li>
+                <li role="menuitem"><a href="#">Pricing</a></li>
+                <li role="menuitem"><a href="#">Blog</a></li>
+                <li role="menuitem"><a href="#" class="header-button">Request a quote</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- hero section -->
+        <section class="hero-section inline-padding">
+            <div class="text-content">
+                <h1>Navigating the digital landscape for success</h1>
+                <img src="assets/hero_section_image.svg" alt="" class="mobile-only">
+                <p>
+                    Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.
+                </p>
+                <button class="primary-button">Book a consultation</button>
+            </div>
+            <img src="assets/hero_section_image.svg" alt="" class="desktop-only">
+        </section>
+
+        <!-- brand logos -->
+        <section class="brands-section" aria-label="Trusted by these companies">
+            <ul class="logo-container" role="list">
+                <li role="listitem" >
+                    <img src="assets/amazon.svg" alt="Amazon" class="logo">
+                </li>
+                <li role="listitem" >
+                    <img src="assets/dribbble.svg" alt="Dribbble" class="logo">
+                </li>
+                <li role="listitem" >
+                    <img src="assets/HubSpot.svg" alt="HubSpot" class="logo">
+                </li>
+                <li role="listitem" >
+                    <img src="assets/Notion.svg" alt="Notion" class="logo">
+                </li>
+                <li role="listitem" >
+                    <img src="assets/Netflix.svg" alt="Netflix" class="logo">
+                </li>
+                <li role="listitem" >
+                    <img src="assets/zoom.svg" alt="Zoom" class="logo">
+                </li>  
+            </ul>
+            <!-- Duplicate the logos for animation-->
+            <ul class="logo-container" role="list" aria-hidden="true">
+                <li role="listitem" >
+                    <img src="assets/amazon.svg" alt="Amazon" class="logo">
+                </li>
+                <li role="listitem" >
+                    <img src="assets/dribbble.svg" alt="Dribbble" class="logo">
+                </li>
+                <li role="listitem" >
+                    <img src="assets/HubSpot.svg" alt="HubSpot" class="logo">
+                </li>
+                <li role="listitem" >
+                    <img src="assets/Notion.svg" alt="Notion" class="logo">
+                </li>
+                <li role="listitem" >
+                    <img src="assets/Netflix.svg" alt="Netflix" class="logo">
+                </li>
+                <li role="listitem" >
+                    <img src="assets/zoom.svg" alt="Zoom" class="logo">
+                </li>  
+            </ul>
+        </section>
+
+        <!-- services section -->
+        <section class="services-section inline-padding">
+            <div class="heading-subheading">
+                <h2 class="bg-green">Services</h2>
+                <p>
+                    At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:
+                </p>
+            </div>
+            <div class="container">
+                <div class="card bg-gray">
+                    <div class="title-link">
+                        <h3>
+                            <span class="bg-green">Search engine optimization</span>  
+                        </h3>
+                        <div class="card-image mobile-only">
+                            <img src="assets/tokyo-magnifier-web-search-with-elements 2.svg" alt="">
+                        </div>
+                        <a href="">
+                            <span class="bg-green colored-arrow">
+                                <i class="bi bi-arrow-up-right-circle-fill"></i>
+                            </span>
+                            Learn more 
+                        </a>
+                    </div>
+                    <div class="card-image desktop-only">
+                        <img src="assets/tokyo-magnifier-web-search-with-elements 2.svg" alt="">
+                    </div>
+                    
+                </div>
+                <div class="card bg-green">
+                    <div class="title-link">
+                        <h3>
+                           <span class="bg-white">Pay-per-click advertising</span> 
+                        </h3>
+                        <div class="card-image mobile-only">
+                            <img src="assets/tokyo-selecting-a-value-in-the-browser-window 1.svg" alt="">
+                        </div>
+                        <a href="">
+                            <span class="bg-green colored-arrow">
+                                <i class="bi bi-arrow-up-right-circle-fill"></i>
+                            </span>
+                            Learn more 
+                        </a>
+                    </div>
+                    <div class="card-image desktop-only">
+                        <img src="assets/tokyo-selecting-a-value-in-the-browser-window 1.svg" alt="">
+                    </div>
+                    
+                </div>
+                <div class="card bg-black">
+                    <div class="title-link">
+                        <h3>
+                           <span class="bg-white">Social Media Marketing</span> 
+                        </h3>
+                        <div class="card-image mobile-only">
+                            <img src="assets/tokyo-browser-window-with-emoticon-likes-and-stars-around 2.svg" alt="">
+                        </div>
+                        <a href="" class="white-text">
+                            <span class="bg-black colored-arrow">
+                                <i class="bi bi-arrow-up-right-circle-fill"></i>
+                            </span>
+                            Learn more 
+                        </a>
+                    </div>
+                    <div class="card-image desktop-only">
+                        <img src="assets/tokyo-browser-window-with-emoticon-likes-and-stars-around 2.svg" alt="">
+                    </div>   
+                </div>
+                <div class="card bg-gray">
+                    <div class="title-link">
+                        <h3>
+                           <span class="bg-green">Email Marketing</span> 
+                        </h3>  
+                        <div class="card-image mobile-only">
+                            <img src="assets/tokyo-sending-messages-from-one-place-to-another 1.svg" alt="">
+                        </div>
+                        <a href="">
+                            <span class="bg-green colored-arrow">
+                                <i class="bi bi-arrow-up-right-circle-fill"></i>
+                            </span>
+                            Learn more  
+                        </a>
+                    </div>
+                    <div class="card-image desktop-only">
+                        <img src="assets/tokyo-sending-messages-from-one-place-to-another 1.svg" alt="">
+                    </div>
+                </div>
+                <div class="card bg-green">
+                    <div class="title-link">
+                        <h3>
+                           <span class="bg-white">Content Creation</span> 
+                        </h3> 
+                        <div class="card-image mobile-only">
+                            <img src="assets/tokyo-many-browser-windows-with-different-information 1.svg" alt="">
+                        </div>
+                        <a href="">
+                            <span class="bg-green colored-arrow">
+                                <i class="bi bi-arrow-up-right-circle-fill"></i>
+                            </span>
+                            Learn more 
+                        </a>
+                    </div>
+                    <div class="card-image desktop-only">
+                        <img src="assets/tokyo-many-browser-windows-with-different-information 1.svg" alt="">
+                    </div>
+                </div>
+                <div class="card bg-black">
+                    <div class="title-link">
+                        <h3>
+                           <span class="bg-white">Email Marketing</span> 
+                        </h3>
+                        <div class="card-image mobile-only">
+                            <img src="assets/tokyo-volumetric-analytics-of-different-types-in-web-browsers 2.svg" alt="">
+                        </div>
+                        <a href="" class="white-text">
+                            <span class="bg-black ">
+                                <i class="bi bi-arrow-up-right-circle-fill"></i>
+                            </span>
+                            Learn more  
+                        </a>
+                    </div>
+                    <div class="card-image desktop-only">
+                        <img src="assets/tokyo-volumetric-analytics-of-different-types-in-web-browsers 2.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- cta section -->
+        <section class="cta-section inline-padding">
+            <div class="container bg-gray">
+                <div class="text-content">
+                    <h3>Let's make things happen</h3>
+                    <p>Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.</p>
+                    <button class="primary-button">Book a consultation</button>
+                </div>
+                <div class="cta-image">
+                    <img src="assets/cta_section_Illustration.svg" alt="" class="desktop-only">
+                </div>
+            </div>
+        </section>
+
+        <!-- case studies -->
+        <section class="case-studies-section inline-padding">
+            <div class="heading-subheading">
+                <h2 class="bg-green">Case Studies</h2>
+                <p>Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies</p>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <p>For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
+                    <a href="">
+                        Learn more
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+                <div class="card">
+                    <p>For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for key keywords and a 200% increase in organic traffic.</p>
+                    <a href="">
+                        Learn more
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+                <div class="card">
+                    <p>For a national retail chain, we created a social media marketing campaign that increased followers by 25% and generated a 20% increase in online sales.</p>
+                    <a href="">
+                        Learn more
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- process section -->
+        <section class="process-section inline-padding">
+            <div class="heading-subheading">
+                <h2 class="bg-green">Our Working Process </h2>
+                <p>Step-by-Step Guide to Achieving Your Business Goals</p>
+            </div>
+            <div class="container">
+                <div class="card" aria-labelledby="t1">
+                    <div class="label">
+                        <div class="text">
+                            <span class="number">01</span>
+                            <span class="title" id="t1">Consultation</span>
+                        </div>
+                        <button class="expand-button" aria-expanded="false" aria-controls="d1">
+                            <i class="fas fa-plus" aria-hidden="true"></i>
+                            <span class="sr-only">Show more details</span>
+                        </button>
+                    </div>
+                    <div class="details" id="d1" aria-hidden="true">
+                        <p>During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
+                    </div>
+                </div>
+                <div class="card" aria-labelledby="t2">
+                    <div class="label">
+                        <div class="text">
+                            <span class="number">02</span>
+                            <span class="title" id="t2">Research and Strategy Development</span>
+                        </div>
+                        <button class="expand-button" aria-expanded="false" aria-controls="d2">
+                            <i class="fas fa-plus" aria-hidden="true"></i>
+                            <span class="sr-only">Show more details</span>
+                        </button>
+                    </div>
+                    <div class="details" id="d2" aria-hidden="true">
+                        <p>During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
+                    </div>
+                </div>
+                <div class="card" aria-labelledby="t3">
+                    <div class="label">
+                        <div class="text">
+                            <span class="number">03</span>
+                            <span class="title" id="d3">Implementation</span>
+                        </div>
+                        <button class="expand-button" aria-controls="d3" aria-expanded="false">
+                            <i class="fas fa-plus" aria-hidden="true"></i>
+                            <span class="sr-only">Show more details</span>
+                        </button>
+                    </div>
+                    <div class="details" id="d3" aria-hidden="true">
+                        <p>During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
+                    </div>
+                </div>
+                <div class="card" aria-labelledby="t4">
+                    <div class="label">
+                        <div class="text">
+                            <span class="number">04</span>
+                            <span class="title" id="t4">Monitoring and Optimization</span>
+                        </div>
+                        <button class="expand-button" aria-expanded="false" aria-controls="d4">
+                            <i class="fas fa-plus" aria-hidden="true"></i>
+                            <span class="sr-only">Show more details</span>
+                        </button>
+                    </div>
+                    <div class="details" id="d4" aria-hidden="true">
+                        <p>During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
+                    </div>
+                </div>
+                <div class="card" aria-labelledby="t5">
+                    <div class="label">
+                        <div class="text">
+                            <span class="number">05</span>
+                            <span class="title" id="t5">Reporting and Communication</span>
+                        </div>
+                        <button class="expand-button" aria-expanded="false" aria-controls="d5">
+                            <i class="fas fa-plus" aria-hidden="true"></i>
+                            <span class="sr-only">Show more details</span>
+                        </button>
+                    </div>
+                    <div class="details" id="d5" aria-hidden="true">
+                        <p>During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
+                    </div>
+                </div>
+                <div class="card" aria-labelledby="t6">
+                    <div class="label">
+                        <div class="text">
+                            <span class="number">06</span>
+                            <span class="title" id="t6">Continual Improvement</span>
+                        </div>
+                        <button class="expand-button" aria-expanded="false" aria-controls="d6">
+                            <i class="fas fa-plus" aria-hidden="true"></i>
+                            <span class="sr-only">Show more details</span>
+                        </button>
+                    </div>
+                    <div class="details" id="d6" aria-hidden="true">
+                        <p>During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- team section -->
+        <section class="team-section inline-padding">
+            <div class="heading-subheading">
+                <h2 class="bg-green">Team</h2>
+                <p>Meet the skilled and experienced team behind our successful digital marketing strategies</p>
+            </div>
+            <div class="container">
+                <div class="grid-container">
+                    <div class="card">
+                        <a href="#" class="social">
+                            <div class="custom-icon-container">
+                                <i class="fab fa-linkedin-in custom-icon"></i>
+                            </div>
+                        </a>
+                        <div class="personal-informations">
+                            <img src="assets/JohnSmith.png" alt="">
+                            <div class="infos">
+                                <h4>John Smith</h4>
+                                <p>CEO and Founder</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="#" class="social">
+                            <div class="custom-icon-container">
+                                <i class="fab fa-linkedin-in custom-icon"></i>
+                            </div>
+                        </a>
+                        <div class="personal-informations">
+                            <img src="assets/JaneDoe.png" alt="">
+                            <div class="infos">
+                                <h4>Jane Doe</h4>
+                                <p>Director of Operations</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>7+ years of experience in project management and team leadership. Strong organizational and communication skills</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="#" class="social">
+                            <div class="custom-icon-container">
+                                <i class="fab fa-linkedin-in custom-icon"></i>
+                            </div>
+                        </a>
+                        <div class="personal-informations">
+                            <img src="assets/MichaelBrown.png" alt="">
+                            <div class="infos">
+                                <h4>Michael Brown</h4>
+                                <p>Senior SEO Specialist</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="#" class="social">
+                            <div class="custom-icon-container">
+                                <i class="fab fa-linkedin-in custom-icon"></i>
+                            </div>
+                        </a>
+                        <div class="personal-informations">
+                            <img src="assets/EmilyJohnson.png" alt="">
+                            <div class="infos">
+                                <h4>Emily Johnson</h4>
+                                <p>PPC Manager</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="#" class="social">
+                            <div class="custom-icon-container">
+                                <i class="fab fa-linkedin-in custom-icon"></i>
+                            </div>
+                        </a>
+                        <div class="personal-informations">
+                            <img src="assets/BrianWilliams.png" alt="">
+                            <div class="infos">
+                                <h4>Brian Williams</h4>
+                                <p>Social Media Specialist</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="#" class="social">
+                            <div class="custom-icon-container">
+                                <i class="fab fa-linkedin-in custom-icon"></i>
+                            </div>
+                        </a>
+                        <div class="personal-informations">
+                            <img src="assets/SarahKim.png" alt="">
+                            <div class="infos">
+                                <h4>Sarah Kim</h4>
+                                <p>Content Creator</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>2+ years of experience in writing and editing Skilled in creating compelling, SEO-optimized content for various industries</p>
+                        </div>
+                    </div>
+                </div>
+               <button class="primary-button">See all team</button>
+            </div>
+        </section>
+
+        <!-- testimonials section -->
+        <section class="testimonials-section inline-padding">
+            <div class="heading-subheading">
+                <h2 class="bg-green">Testimonials</h2>
+                <p>Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services</p>
+            </div>
+            <div class="swiper bg-black">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="slide 1 of 5">
+                        <div class="message white-text">
+                            <p>"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
+                        </div>
+                        <div class="author">
+                            <h4 class="name">John Smith</h4>
+                            <h4 class="title white-text">Marketing Director at XYZ Corp</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="slide 2 of 5">
+                        <div class="message white-text">
+                            <p>"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
+                        </div>
+                        <div class="author">
+                            <h4 class="name">John Smith</h4>
+                            <h4 class="title white-text">Marketing Director at XYZ Corp</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="slide 3 of 5">
+                        <div class="message white-text">
+                            <p>"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
+                        </div>
+                        <div class="author">
+                            <h4 class="name">John Smith</h4>
+                            <h4 class="title white-text">Marketing Director at XYZ Corp</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="slide 4 of 5">
+                        <div class="message white-text">
+                            <p>"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
+                        </div>
+                        <div class="author">
+                            <h4 class="name">John Smith</h4>
+                            <h4 class="title white-text">Marketing Director at XYZ Corp</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="slide 5 of 5">
+                        <div class="message white-text">
+                            <p>"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
+                        </div>
+                        <div class="author">
+                            <h4 class="name">John Smith</h4>
+                            <h4 class="title white-text">Marketing Director at XYZ Corp</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="controls-container">
+                    <button class="button-prev arrow" aria-label="Previous Slide">
+                        <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                    </button>
+    
+                    <div class="pagination-dots"></div>
+    
+                    <button class="button-next arrow" aria-label="Next Slide">
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+             </div>
+        </section>
+
+        <!-- contact us section -->
+        <section class="contact-section inline-padding">
+            <div class="heading-subheading">
+                <h2 class="bg-green">Contact Us</h2>
+                <p>Connect with Us: Let's Discuss Your Digital Marketing Needs</p>
+            </div>
+            <div class="container">
+                <img src="assets/contact_section_Illustration.svg" alt="" class="desktop-only">
+                <form action="">
+                    <fieldset>
+                        <div class="choice">
+                            <label class="custom-radio" tabindex="0">
+                                <input type="radio" name="contact_reason" value="Hi" checked required>
+                                <span class="radio-mark"></span>
+                                Say Hi
+                            </label>
+                            <label class="custom-radio" tabindex="0">
+                                <input type="radio" name="contact_reason" value="Quote">
+                                <span class="radio-mark"></span>
+                                Get a Quote
+                            </label>
+                        </div>
+                        <div class="input">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Name" autocomplete="off">
+                        </div>
+                        <div class="input">
+                            <label for="email">Email*</label>
+                            <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" required>
+                        </div>
+                        <div class="input">
+                            <label for="message">Message*</label>
+                            <textarea name="message" id="message" placeholder="Message" required></textarea>
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="primary-button">Send Message</button>
+                </form>
+            </div>
+        </section>         
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-black">
+        <div class="top-container">
+            <div class="logo">
+                <a href="">
+                    <img src="assets/Logo-white.svg" alt="">
+                </a>
+            </div>
+            <nav class="secondary-navigation">
+                <ul role="menu">
+                    <li role="menuitem"><a href="#" class="white-text">About us</a></li>
+                    <li role="menuitem"><a href="#" class="white-text">Services</a></li>
+                    <li role="menuitem"><a href="#" class="white-text">Use Cases</a></li>
+                    <li role="menuitem"><a href="#" class="white-text">Pricing</a></li>
+                    <li role="menuitem"><a href="#" class="white-text">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="socials desktop-only">
+                <a href="" class="white-text social">
+                    <div class="custom-icon-container">
+                        <i class="fab fa-linkedin-in custom-icon"></i>
+                    </div>
+                </a>
+                <a href="" class="white-text social">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="" class="white-text social">
+                    <div class="custom-icon-container">
+                        <i class="fab fa-x-twitter custom-icon"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="columns-container">
+            <div class="contact-us">
+                <h4 class="bg-green">Contact us:</h4>
+                <address class="white-text">
+                    <p>Email: info@positivus.com</p>
+                    <p>Phone: 555-567-8901</p>
+                    <p>Address: 1234 Main St <br> Moonstone City, Stardust State 12345</p>
+                </address>
+            </div>
+            <div class="newsletter">
+                <input type="email" name="subscription-email" id="subscription-email" placeholder="Email">
+                <button class="subscription-button">Subscribe to news</button>
+            </div>
+            <div class="socials mobile-only">
+                <a href="" class="white-text social">
+                    <div class="custom-icon-container">
+                        <i class="fab fa-linkedin-in custom-icon"></i>
+                    </div>
+                 </a>
+                 <a href="" class="white-text social">
+                    <i class="fab fa-facebook"></i>
+                 </a>
+                 <a href="" class="white-text social">
+                    <div class="custom-icon-container">
+                        <i class="fab fa-x-twitter custom-icon"></i>
+                    </div>
+                 </a>
+            </div>
+        </div>
+        <div class="copyright-container">
+            <p class="white-text">&copy; 2023 Positivus. All Rights Reserved.</p>
+            <a href="" class="white-text">Privacy Policy</a>
+        </div>
+    </footer>
+
+    <!-- script for the swiper.js cdn file -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- script for initialising the swiper -->
+    <script>
+        var swiper = new Swiper(".swiper", {
+                slidesPerView: 2,
+                centeredSlides: true,
+                loop: true, 
+                spaceBetween: 50,
+                pagination: {
+                    el: ".pagination-dots",
+                    clickable: true
+                },
+                navigation: {
+                nextEl: ".button-next", 
+                prevEl: ".button-prev" 
+                },
+                breakpoints: {
+                    880: { 
+                        slidesPerView: 2,
+                        centeredSlides: true,
+                        spaceBetween: 50
+                    },
+                    0: {
+                        slidesPerView: 1,
+                        centeredSlides: false,
+                        spaceBetween: 100 
+                    }
+                },
+                on: {
+                        init: function () {
+                        document.querySelectorAll(".pagination-dots .swiper-pagination-bullet").forEach((dot, index) => {
+                            dot.setAttribute("role", "button");
+                            dot.setAttribute("aria-label", `Go to slide ${index + 1}`); 
+                            dot.setAttribute("tabindex", "0");
+                        }); }
+                    }
+            });
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
