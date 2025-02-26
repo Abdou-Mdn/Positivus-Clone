@@ -277,6 +277,7 @@ header {
         padding: min(30vh,8rem) 2rem;
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
+        overflow-y: scroll;
     }
 
     .primary-navigation.expanded ul {
